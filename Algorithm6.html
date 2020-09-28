@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Basic Algorithm Challenges Using Javascript">
+    <meta name="description" content="This is Basic Algorithm challenges using javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Min array</title>
+  </head>
+  <body>
+    <h3>Finding the Max Array</h3>
+    <script>
+      let arr = [18, 23, 4, 15, 29, 12, 10];
+      function printMaxOfArray(arr) {
+        let max = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] >= max) {
+            max = arr[i];
+          }
+        }
+        document.write(`The minimum number is ${max}`);
+      }
+      printMaxOfArray(arr);
+    </script>
+  </body>
+</html>

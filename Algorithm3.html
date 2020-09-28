@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Basic Algorithm Challenges Using Javascript">
+    <meta name="description" content="This is Basic Algorithm challenges using javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functionchallenge3</title>
+</head>
+<body>
+    <h1>Functionchallenge3</h1>
+    <script>
+        //print average of array
+        let marks = new Array(5)
+        let sum = 0
+        function printAverage(){
+           for ( i = 0; i < marks.length; i++)  {
+               marks[i] = parseInt(prompt(`please input your marks for subject ${i +1} `))
+               sum = sum + marks [i];
+           }
+          let average = sum/ marks.length
+          document.write(`the average of the five subject is ${average}`)
+        }
+        printAverage()
+    </script>
+</body>
+</html>
